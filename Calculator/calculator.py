@@ -1,8 +1,5 @@
 # Calculator program using text interface
 
-from calendar import c
-
-
 def add(intToAdd):
     inpAdd = int(input("Enter next number: "))
     intInput = intToAdd + inpAdd
