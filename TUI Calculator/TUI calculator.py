@@ -34,12 +34,6 @@ def clear(intToClear):
 def equals(intToOutput):
     print(intToOutput)
 
-def concat(a, b):
-    s1 = str(a)
-    s2 = str(b)
-    s = s1 + s2
-    return c
-
 
 def mainMenu(intm):
     print("1 - Add\n2 - Subtract\n3 - Multiply\n4 - Divide\n5 - Clear\n6 - Equals...\n7 - Quit\n")
