@@ -77,10 +77,6 @@ def mainMenu():
         print("Error")
         mainMenu()
 
-def scoreHuman(human):
-    human = human + 1
-
-
 run = True
 while run == True:
     mainMenu()
