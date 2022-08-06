@@ -1,25 +1,25 @@
 # Calculator program using text interface
 
 def add(intToAdd):
-    inpAdd = int(input("Enter next number: "))
+    inpAdd = float(input("Enter next number: "))
     intInput = intToAdd + inpAdd
     mainMenu(intInput)
     return intInput
 
 def subtract(intToSub):
-    inpSub = int(input("Enter next number: "))
+    inpSub = float(input("Enter next number: "))
     intInput = intToSub - inpSub
     mainMenu(intInput)
     return intInput
 
 def multiply(intToTimes):
-    inpTimes = int(input("Enter next number: "))
+    inpTimes = float(input("Enter next number: "))
     intInput = intToTimes * inpTimes
     mainMenu(intInput)
     return intInput
 
 def divide(intToDivide):
-    inpDivide = int(input("Enter next number: "))
+    inpDivide = float(input("Enter next number: "))
     if inpDivide == 0:
         print("Error")
     intInput = intToDivide / inpDivide
@@ -37,7 +37,8 @@ def equals(intToOutput):
 
 def mainMenu(intm):
     print("1 - Add\n2 - Subtract\n3 - Multiply\n4 - Divide\n5 - Clear\n6 - Equals...\n7 - Quit\n")
-    print(intm)
+    x = round(intm, 3)
+    print(x)
     option = int(input("Choose your operation: "))
     if option == 1:
         add(intm)
@@ -58,7 +59,7 @@ def mainMenu(intm):
         mainMenu(intm)
 
 def mainOp():
-    intInput = int(input("Enter your number: "))
+    intInput = float(input("Enter your number: "))
     mainMenu(intInput)
     return intInput
 
